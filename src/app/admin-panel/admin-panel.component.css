@@ -1,0 +1,68 @@
+.wrapper{
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    background-color: white;
+    margin:2em 5em 2em 5em;
+    padding: 2em 5em 2em 5em;
+       
+    }
+
+.persistence >h2{
+    cursor: pointer;
+}
+
+.users{
+
+    margin-top: 60px;
+}
+
+.user{
+    background-color: red;
+    display: flex;
+    justify-content: left;
+    margin: 10px;
+}
+.permission{
+
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.permission-panel {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  thead {
+    font-weight: bold;
+    background-color: #f0f0f0;
+  }
+  
+  th, td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ccc;
+  }
+  
+  th:first-child, td:first-child {
+    text-align: left;
+  }
+  
+  input[type="checkbox"] {
+    margin: 0;
+  }
+  
+  .block-button {
+    background-color: #f44336;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+  }

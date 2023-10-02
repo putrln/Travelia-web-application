@@ -1,0 +1,39 @@
+
+<div class="wrapper">
+
+    <h2>Wybierz tryb persystencji stanu logowania: </h2>
+    <div class="persistence">
+        <h2 (click)="changePersistence('local')"  [style.color]="persistance == 'local'? 'red' : 'initial'">LOCAL</h2>
+        <h2 (click)="changePersistence('session')" [style.color]="persistance == 'session' ? 'red' : 'initial'">SESSION</h2>
+        <h2 (click)="changePersistence('none')" [style.color]="persistance == 'none' ? 'red' : 'initial'">NONE</h2>
+    </div>
+    <div class="permission">
+        <div class="permission-panel">
+            <table>
+              <thead>
+                <tr>
+                  <th>Konto</th>
+                  <th>Administrator</th>
+                  <th>Menadżer</th>
+                  <th>Użytkownik</th>
+                  <th>Blokada</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr *ngFor="let item of users; let i = index">
+                  <td>{{item.email}}</td>
+                  <td><input type="checkbox" [checked]="users[i].roles.admin" (change)="onAdminChange(users[i].uid,i,$event)"></td>
+                  <td><input type="checkbox" [checked]="users[i].roles.menager" (change)="onManangerChange(users[i].uid,i,$event)"  ></td>
+                  <td><input type="checkbox" [checked]="users[i].roles.client" (change)="onUserChange(users[i].uid,i,$event)"></td>
+                  <td><button class="block-button" (click)="banUser(users[i].uid,i)">{{ users[i].roles.banned ? 'Odblokuj' : 'Zablokuj' }}</button></td>
+                </tr>
+               
+              </tbody>
+            </table>
+          </div>
+    </div>
+   
+
+    <h2>Aby zobaczyć wprowadzone zmiany należy się ponownie zalogować</h2>
+
+</div>

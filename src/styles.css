@@ -1,0 +1,19 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+
+}
+
+body{
+
+    background-image: url(./assets/img/nature5.png);
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: rgb(87, 168, 235);
+    margin-bottom: 0;
+    margin-top: 0;
+}

@@ -1,0 +1,83 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap');
+
+.slide {
+  width: 100%;
+  height: 100%;
+ 
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  transition: all 0.5s ease;
+}
+  
+  .rightArrow {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    right: 32px;
+    font-size: 45px;
+    color: #fff;
+    z-index: 1;
+    cursor: pointer;
+  }
+  
+  .leftArrow {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    left: 32px;
+    font-size: 45px;
+    color: #fff;
+    z-index: 1;
+    cursor: pointer;
+  }
+  .logoText{
+    position: absolute;
+    top: 35%;
+    left: 12%;
+    z-index: 1;
+    font-family: 'Poppins', sans-serif;
+   font-size: 20px;
+   color: white;
+  
+
+  }
+
+.color{
+  text-decoration-line: underline;
+  text-decoration-style: "solid";
+  text-underline-position: under;
+  text-decoration-color: rgba(232,54,0,1);
+  text-decoration-thickness: 10px;
+  }
+  
+  .slider {
+    position: relative;
+    height: 100%;
+  }
+  
+  .dotsContainer {
+    position: absolute;
+    top:95%;
+    left: 50%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .dot {
+    margin: 0 3px;
+    cursor: pointer;
+    font-size: 20px;
+  }
+
+  .overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+ 
+    background-color: rgb(195, 194, 197);
+    opacity: 0.3;
+
+  }

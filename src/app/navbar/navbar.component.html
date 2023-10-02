@@ -1,0 +1,17 @@
+<nav>
+    <h1>Travelia</h1>
+   <div class="nav-container"  id ="nav-menu">
+        <h4 routerLink="/">Start</h4>
+        <h4 routerLink="/trips">Wycieczki</h4>
+        <h4 *ngIf="auth.currentUser!=null" routerLink="/basket">Koszyk</h4>
+        <h4  *ngIf="auth.currentUser==null" routerLink="/register">Zarejstruj się</h4>
+        <h4 *ngIf="auth.currentUser==null" routerLink="/login">Zaloguj się</h4>
+        <h4 *ngIf="auth.currentUser?.roles.admin" routerLink="/admin-panel" [ngStyle]="{color: 'red'}">ADMIN PANEL</h4>
+        <h4 *ngIf="auth.currentUser?.roles.admin || auth.currentUser?.roles.menager" routerLink="/trips-menager" >Menadzer Wycieczek</h4>
+        <img *ngIf="auth.currentUser!=null" routerLink="/profile"class="profile-img"img src="assets/img/user.png"alt="">
+        <p>{{auth.currentUser?.email}}</p>
+    </div>
+    <fa-icon *ngIf="!clicked" id="nav-toggle-open" [icon] = "faBurger" class="fa-2x"  (click)="openMenu()"></fa-icon>
+    <fa-icon  *ngIf="clicked" id="nav-toggle-close" [icon] = "faTimes" class="fa-2x" (click)="closeMenu()"></fa-icon>
+    
+    </nav>

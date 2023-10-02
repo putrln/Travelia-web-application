@@ -1,0 +1,26 @@
+
+
+<div class="wrapper">
+
+    <div class="beg">
+    <div id="bgImage">
+        <div class="text-box">
+            <h1>{{tripToShow.name}}</h1>
+    </div>
+</div>
+</div>
+    
+    <section>
+  
+    <h3>{{tripToShow.shortDescription}}</h3>
+    <h3 class="price">Koszt:{{tripToShow.price |currency}}</h3>
+    <h3>Ocena wycieczki</h3>
+    <div class="rate">
+    
+    </div>
+    
+    <app-trip-opinions [idOfTrip]="tripToShow.id"></app-trip-opinions>
+    
+    </section>
+    
+    </div>

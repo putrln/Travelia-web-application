@@ -1,0 +1,53 @@
+
+
+
+<div class="summary-wrapper">
+</div>
+<app-filter-trip (newItemEvent)="reciveFilteredArray($event)" [tripsToFilter]="Alltrips"></app-filter-trip>
+<div class="wrapper">
+    <ng-container   *ngFor="let trip of Alltrips; let i = index">
+   <div  *ngIf="FilteredTrips.includes(trip)"
+    class="singleTrip">
+       <img class="imageOfTrip" [routerLink]="['/trips',trip.id]" [src]="trip.imageLink" alt="">
+       <div class="information">
+       <h2>{{trip.name | uppercase}}</h2>
+       <h3>Kraj: {{trip.country | uppercase}}</h3>
+       <h4>Cena: {{trip.price | currency}}</h4>
+       <h4>Data rozpoczęcia: {{trip.startDate}}</h4>
+       <h4>Data zakończenia: {{trip.endDate}}</h4>
+       <div class="description">
+       <h4>{{trip.shortDescription}}</h4>
+       </div>
+       <div class="btn-available">
+        <div class="rate">
+        <app-rating *ngIf="trip.star > 0 else withoutOpionions"  [onlyShow]="trip.star" ></app-rating>
+        <!-- <p>Ocena:{{trip.star}}</p> -->
+        <ng-template #withoutOpionions>
+            <h4 class="opinions">Bądź pierwszą osobą która oceni wycieczke!</h4>
+        </ng-template>
+    </div>
+        <div class="textAndButton">
+           <button
+           [ngClass]="{
+           'button-unavailable' : trip.availableSpots>=standardData[i].availableSpots}"
+            (click)="onMinusClick(i)"
+            class="button minus">-</button>
+           <h4 [ngStyle]="{
+               'color' : trip.availableSpots<=3 ? 'red': 'black'}">
+               Ilość miejsc {{trip.availableSpots}}</h4>
+           <button
+           [ngClass]="{
+               'button-unavailable' : trip.availableSpots<=0}"
+            (click)="onPlusClick(i)"
+            class="button plus">+</button>
+        </div>
+       </div>
+   </div>
+   
+   </div>
+</ng-container>
+</div>
+<br>
+<br>
+<app-froms *ngIf = "showForm" (messageEventExit)="ExitForm($event)"    (messageEvent)="reciveNewTrip($event)"  [id]="Alltrips.length"></app-froms>
+

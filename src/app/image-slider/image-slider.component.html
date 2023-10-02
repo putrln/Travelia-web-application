@@ -1,0 +1,19 @@
+<div class="slider">
+   
+    
+    <div class="slide" [ngStyle]="{'background-image': getCurrentSlideUrl()}">
+        <div class="logoText" >
+            <h1>Przeżyj <span class="color">niezapomnianą</span> przygodę razem z nami</h1>
+            </div>
+            <img class="leftArrow" (click)="goToPrevious()" src="assets/img/left-arrow.png" alt="">
+            <img class="rightArrow" (click)="goToNext()" src="assets/img/right-arrow.png" alt="">
+        <div class="overlay">
+        </div>
+    <div class="dotsContainer">
+        <div *ngFor="let slide of slides; let slideIndex = index" class="dot" (click)="goToSlide(slideIndex)"> ●</div>
+
+    </div> 
+
+    </div>
+ 
+</div>

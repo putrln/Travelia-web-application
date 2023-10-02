@@ -1,0 +1,49 @@
+
+
+<div class="container">
+<div class="wrapper">
+<div class="box">
+    <h1>Filtruj</h1>
+<label for="country">Wybierz kraj</label>
+<select id="country"  (change)="choosedCountry()" [(ngModel)]="country">
+    <option *ngFor="let val of tripsToFilter">{{val.country}}</option>
+
+</select>
+
+<div class="price_input">
+    <label>od</label>
+    <input type="text" [(ngModel)]="price[0]" (change)="filterAll()">
+    <label>do</label>
+    <input type="text"  [(ngModel)]="price[1]" (change)="filterAll()">
+</div>
+<label for="rate">Wybierz ocene</label>
+<select id="rate"  (change)="chooseStar()" [(ngModel)]="star">
+    <option value="1">1 Gwiazka</option>
+    <option value="2">2 Gwiazdki</option>
+    <option value="3">3 Gwiazdki</option>
+    <option value="4">4 Gwiazdki</option>
+    <option value="5">5 Gwiazdki</option>
+</select>
+
+
+
+
+</div>
+
+</div>
+
+</div>
+<h2 *ngIf = "countries.length>0">Dodane Filtry</h2>
+<div class="wrap-filters">
+<div class="filters">
+<div class="filter" *ngFor="let val of countries;let i = index">{{val}}
+    <img (click)="removeCountryEvent(i)" class="exitbtn" src="assets/img/close_filter.png" alt="">
+</div>
+    <div class="filter" *ngFor="let val of stars;let i = index">{{val}}
+    <img (click)="removeStarEvent(i)" class="exitbtn" src="assets/img/close_filter.png" alt="">
+
+
+
+</div>
+
+</div>

@@ -1,0 +1,28 @@
+
+<div class="wrapper">
+    <h1>Twój koszyk</h1>
+    
+    <div class="boughtTrips">
+        <div *ngFor="let item of getBasket(); let i = index">
+        <div class="singleTrip">
+        
+            <img [src]="item.imageLink" alt="">
+            <div class="tripName">
+                <h1>{{item.name}}</h1>
+                <h3>Cena: {{item.price| currency}}</h3>
+     
+                <h4>{{item.shortDescription}}</h4>
+    
+    
+            </div>
+            <div class="onExit">
+            <img src="assets/img/button_exit.png" alt="" (click)="removeTripFromBasket(item)">
+            </div>
+        </div>
+        </div>
+        <h1>Cena całkowita: {{getFullPrice()| currency}}</h1>
+    </div>
+    <div class="btn" (click)="onBuyEvent()" >
+        <button>Kup</button>
+      </div>
+    </div>

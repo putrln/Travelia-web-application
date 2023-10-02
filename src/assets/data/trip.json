@@ -1,0 +1,142 @@
+{
+    "Trips":[
+        {
+        "id":0,
+        "Name":"Rajski wypad",
+        "Country": "Hiszpania",
+        "StartDate":"16.04.2023",
+        "EndDate":"23.04.2023",
+        "Price":299,
+        "Star":0,
+        "AvailableSpots":9,
+        "ShortDescription":"Wycieczka do Hiszpanii to idealny wybór dla tych, którzy chcą zwiedzić wyjątkowy kraj pełen ciepłego klimatu, pięknych plaż i zabytków. Podczas wyjazdu będzie można zwiedzić najważniejsze miasta Hiszpanii, takie jak Madryt, Barcelona czy Sewilla.",
+        
+        "ImageLink": "assets/img/spain.jpg"
+        },
+
+        {
+        "id":1,
+        "Name":"Zakątek Włoch",
+        "Country": "Włochy",
+        "StartDate":"20.05.2023",
+        "EndDate":"27.05.2023",
+        "Price":399,
+        "Star":0,
+        "AvailableSpots":6,
+        "ShortDescription":"Odkryj uroki Włoch podczas tej wycieczki. Zwiedź najpiękniejsze miasta tego kraju, takie jak Rzym, Florencja i Wenecja, a także spróbuj prawdziwych włoskich specjałów i win. Nie zabraknie też okazji do zrelaksowania się nad morzem czy w górach.",
+        "ImageLink": "assets/img/italy.jpg"
+        },
+        {
+        "id":2,
+        "Name":"Złote plaże Chorwacji",
+        "Country": "Chorwacja",
+        "StartDate":"13.06.2023",
+        "EndDate":"20.06.2023",
+        "Price":349,
+        "Star":0,
+        "AvailableSpots":8,
+        "ShortDescription":"Chorwacja to kraj pełen urokliwych plaż i zatok, a także historycznych miast i zamków. Podczas tej wycieczki odwiedzisz Dubrownik, Split i Zadar, a także spróbujesz lokalnych specjałów i skosztujesz najlepszych chorwackich win.",
+        "ImageLink": "assets/img/croatia.jpg"
+        },
+        {
+        "id": 3,
+        "Name": "Magia Paryża",
+        "Country": "Francja",
+        "StartDate": "30.06.2023",
+        "EndDate": "07.07.2023",
+        "Price": 527,
+        "Star":0,
+        "AvailableSpots": 7,
+        "ShortDescription": "Odkryj urok Paryża podczas tej wycieczki. Zwiedź słynne atrakcje takie jak Wieża Eiffla, Luwr i katedra Notre Dame, a także spróbuj pysznych francuskich specjałów i win. Nie zabraknie też okazji do zakupów na słynnych paryskich ulicach.",
+        "ImageLink": "assets/img/france.jpg"
+        },
+        {
+            "id": 4,
+            "Name": "Przepiękna Szwajcaria",
+            "Country": "Szwajcaria",
+            "StartDate": "14.07.2023",
+            "EndDate": "21.07.2023",
+            "Price": 499,
+            "Star":0,
+            "AvailableSpots": 5,
+            "ShortDescription": "Szwajcaria to kraj pełen pięknych krajobrazów, od górskich szczytów po przepiękne jeziora. Podczas tej wycieczki zwiedzisz Berno, Zurych i Genewę, a także spróbujesz lokalnych specjałów i skosztujesz najlepszych szwajcarskich win.",
+            "ImageLink": "assets/img/switzerland.jpg"
+        },
+        {
+            "id": 5,
+            "Name": "Złote plaże Egiptu",
+            "Country": "Egipt",
+            "StartDate": "28.07.2023",
+            "EndDate": "04.08.2023",
+            "Price": 472,
+            "Star":0,
+            "AvailableSpots": 9,
+            "ShortDescription": "Egipt to kraj pełen starożytnych zabytków i ciepłego klimatu. Podczas tej wycieczki zwiedzisz Kair, Luksor i Aleksandrię, a także spróbujesz lokalnych specjałów i skosztujesz egipskich win. Nie zabraknie też okazji do odpoczynku na pięknych egipskich plażach.",
+            "ImageLink": "assets/img/egypt.jpg"
+        },
+        {
+            "id": 6,
+            "Name": "Tajemnicze Maroko",
+            "Country": "Maroko",
+            "StartDate": "11.08.2023",
+            "EndDate": "18.08.2023",
+            "Price": 399,
+            "Star":0,
+            "AvailableSpots": 6,
+            "ShortDescription": "Maroko to kraj pełen tajemniczych zakamarków i pięknych krajobrazów. Podczas tej wycieczki zwiedzisz Marrakesz, Casablankę i Rabat, a także spróbujesz lokalnych specjałów i skosztujesz marokańskich win.",
+            "ImageLink": "assets/img/morocco.jpg"
+        },
+        {
+            "id": 7,
+            "Name": "Przepiękna Tunezja",
+            "Country": "Tunezja",
+            "StartDate": "25.08.2023",
+            "EndDate": "01.09.2023",
+            "Price": 349,
+            "Star":0,
+            "AvailableSpots": 8,
+            "ShortDescription": "Tunezja to kraj pełen ciepłego klimatu i pięknych plaż. Podczas tej wycieczki zwiedzisz Tunis, Sousse i Monastir, a także spróbujesz lokalnych specjałów i skosztujesz tunezyjskich win. Nie zabraknie też okazji do zrelaksowania się nad morzem.",
+            "ImageLink": "assets/img/tunisia.jpg"
+        },
+        {
+            "id": 8,
+            "Name": "Magiczny Londyn",
+            "Country": "Wielka Brytania",
+            "StartDate": "01.07.2023",
+            "EndDate": "08.07.2023",
+            "Price": 499,
+            "Star":0,
+            "AvailableSpots": 4,
+            "ShortDescription": "Zwiedź najsłynniejsze zakątki Londynu, takie jak Big Ben, Tower Bridge i Katedra Świętego Pawła. Skosztuj lokalnych specjałów, odwiedź muzea i galerie sztuki, a także spędź wieczór w jednym z tutejszych teatrów. To wyjątkowa okazja, aby poznać kulturę i historię jednego z najważniejszych miast Europy.",
+            "ImageLink": "assets/img/london.jpg"
+            },
+            {
+                "id": 9,
+                "Name": "Zielone wzgórza Irlandii",
+                "Country": "Irlandia",
+                "StartDate": "29.07.2023",
+                "EndDate": "05.08.2023",
+                "Price": 399,
+                "Star":0,
+                "AvailableSpots": 6,
+                "ShortDescription": "Irlandia to kraj pełen zielonych wzgórz, malowniczych krajobrazów i przyjaznych ludzi. Podczas tej wycieczki odwiedzisz Dubln, Cork i Galway, a także spróbujesz lokalnych specjałów i skosztujesz najlepszych irlandzkich win. To doskonała okazja, aby poznać kulturę i historię tego wyjątkowego  miejsca.",
+                "ImageLink": "assets/img/irleand.jpg"
+
+            }
+    ]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

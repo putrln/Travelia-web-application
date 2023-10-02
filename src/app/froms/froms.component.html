@@ -1,0 +1,84 @@
+<div class="wrapper">
+    <img
+      (click)="OnExitEvent()"
+      class="close"
+      src="assets/img/close.png"
+      alt=""
+    />
+    <h1>Dodaj nową wycieczke</h1>
+    <form
+      class="form"
+      #f="ngForm"
+      [formGroup]="form"
+      (ngSubmit)="onClickEvent(f)"
+    >
+      <div class="input_field">
+        <label>Nazwa Wycieczki</label>
+        <input type="text" class="input" formControlName="name" />
+      </div>
+      <div class="input_field">
+        <label>Kraj</label>
+        <input type="text" class="input" formControlName="country" />
+      </div>
+      <div class="input_field">
+        <label>Cena</label>
+        <input type="text" class="input" formControlName="price" />
+      </div>
+      <div
+        *ngIf="form.get('price')?.invalid && form.get('price')?.touched"
+        class="error"
+      >
+        Cena musi być liczbą!
+      </div>
+  
+      <div class="input_field">
+        <label>Data Rozpoczęcia</label>
+        <input type="text" class="input" formControlName="startDate" />
+      </div>
+      <div
+        *ngIf="form.get('startDate')?.invalid && form.get('startDate')?.touched"
+        class="error"
+      >
+        Wprowadzona data jest bledna!
+      </div>
+      <div class="input_field">
+        <label>Data Zakończenia</label>
+        <input type="text" class="input" formControlName="endDate" />
+      </div>
+      <div
+        *ngIf="form.get('endDate')?.invalid && form.get('endDate')?.touched"
+        class="error"
+      >
+        Wprowadzona data jest bledna!
+      </div>
+      <div class="input_field">
+        <label>Ilośc miejsc</label>
+        <input type="text" class="input" formControlName="availableSpots" />
+        <div
+          *ngIf="
+            form.get('availableSpots')?.invalid &&
+            form.get('availableSpots')?.touched
+          "
+          class="error"
+        >
+          Ilość miejsc musi być liczbą!
+        </div>
+      </div>
+      <div class="input_field">
+        <label>Link do zdjęcia</label>
+        <input type="text" class="input" formControlName="imageLink" />
+      </div>
+      <div class="input_field">
+        <label>krótki opis</label>
+        <textarea
+          cols="50"
+          rows="5"
+          formControlName="shortDescription"
+        ></textarea>
+      </div>
+      <div class="btn">
+        <button>Dodaj</button>
+      </div>
+    </form>
+  </div>
+  

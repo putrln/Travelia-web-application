@@ -1,0 +1,13 @@
+
+<div class="wrapper">
+    <div class="login-container">
+      <h1>Zarejstruj się!</h1>
+      <form>
+          <label for="username">Email </label>
+          <input type="text" id="username" name="username" class="text-align: center" [(ngModel)]="email"><br><br>
+          <label for="password">Hasło</label>
+          <input type="password" id="password" name="password" class="text-align: center" [(ngModel)]="password"><br><br>
+          <input type="submit" value="Register"  (click)="register()">
+      </form>
+    </div>
+  </div>

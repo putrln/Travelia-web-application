@@ -1,0 +1,19 @@
+
+<div class="wrapper">
+    <h1>Twoje Wycieczki</h1>
+    
+    <div class="boughtTrips">
+        <div *ngFor="let item of boughtTrips; let i = index">
+        <div class="singleTrip">
+        
+            <img [src]="item.imageLink" alt="">
+            <div class="tripName">
+                <h1>{{item.name}}</h1>
+                <h3>Cena: {{item.price| currency}}</h3>
+                <h4>{{item.shortDescription}}</h4>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <button (click)="logout()">Wyloguj się</button>

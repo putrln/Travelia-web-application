@@ -1,0 +1,99 @@
+form {
+    margin: 0 auto;
+    width: 50%;
+    --border: 2px solid #000000;
+    border-radius: 20px;
+    padding: 20px;
+    background-color: white;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 16px;
+  }
+  
+  input[type="text"], textarea {
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 40px;
+    box-sizing: border-box;
+    font-size: 14px;
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+  
+  input[type="text"]:focus, textarea:focus {
+    outline: none;
+    border-color: #3498db;
+  }
+  
+  input[type="submit"] {
+    width: 100%;
+    background-color: #3498db;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    border-radius: 3px;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #2980b9;
+  }
+
+  textarea {
+    resize: none;
+  }
+  .btn {
+    display: flex;
+    justify-content: center;
+  }
+  button {
+    width: 100px;
+    height: 30px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: white;
+    margin-top: 30px;
+    color: #333;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  .opinionWrapper{
+    
+    background-color: white;
+    margin:2em 5em 2em 5em;
+    padding: 2em 5em 2em 5em;
+    border-radius: 20px;
+  }
+  .singleOpinion{
+
+    
+    margin-top: 20px;
+    border: solid 2px black;
+    word-wrap: break-word;
+    border-radius: 20px;
+  }
+
+
+  .error {
+    color: red;
+    text-align: center;
+  }
+  .rating{
+
+    display: flex;
+    justify-content: center;
+  }
+
+  p{
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 16px;
+    
+  }
+  

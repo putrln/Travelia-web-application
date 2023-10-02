@@ -1,0 +1,45 @@
+<form [formGroup]="form"
+#f="ngForm"
+(ngSubmit)="onClickEvent(f)" >
+    <label for="nick" >Nick:</label><br>
+    <input formControlName="name" type="text" id="nick" name="nick"><br>
+    <label for="review" >Obszar tekstu opinii:</label><br>
+   
+    <textarea id="review" formControlName="review" name="review" required minlength="50" maxlength="500"></textarea>
+    <p>Ocena</p>
+    <div class="rating">
+    <app-rating  (sendRate)="receiveRate($event)"></app-rating>
+  </div>
+  
+    <div *ngIf="form.get('review').hasError('commented') && form.get('review').touched" class="error">
+      Nie można dodać komentarza, ponieważ został już dodany.
+    </div>
+    <div *ngIf="form.get('review').hasError('notBought') && !form.get('review').hasError('banned') && form.get('review').touched" class="error">
+      Musisz kupić wycieczke aby zostawić komentarz!
+    </div>
+    <div *ngIf="form.get('review').hasError('banned') && form.get('review').touched" class="error">
+      Nie można dodać komentarza, ponieważ twoje konto zostalo zablokowane!
+    </div>
+    <div *ngIf=" !form.get('review').hasError('commented') && !form.get('review').hasError('banned') && !form.get('review').hasError('notBought') && form.get('review')?.invalid && form.get('review')?.touched"
+    class="error">recenzja powinna być dłuższa niż 50 znaków, ale krótsza niż 500 znaków!
+  </div>
+  
+
+  
+    <div class="btn">
+        <button>Dodaj</button>
+      </div>
+  </form> 
+<div class="opinionWrapper" *ngFor="let item of comments">
+    <div class="singleOpinion">
+    <p>{{item.nick}}</p>
+    <p>{{item.comment}}</p>
+    <p>Moja ocena:</p>
+    <div class="rating">
+    
+    <app-rating  [onlyShow]="item.rate"></app-rating>
+  </div>
+</div>
+
+
+</div>

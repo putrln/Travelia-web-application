@@ -1,0 +1,105 @@
+
+
+.wrapper{
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+.boughtTrips{
+    background-color: white;
+    margin:2em 2em 2em 2em;
+    padding: 2em 5em 2em 5em;
+   
+}
+
+.singleTrip {
+    display: flex;
+
+    margin-top: 20px;
+    border: solid 2px black;
+    height: 200px;
+    
+  }
+  
+  .singleTrip:hover {
+    background-color: lightgrey;
+    cursor: pointer;
+  }
+
+
+.tripName{
+    justify-content: center;
+    
+}
+.onExit{
+    display: flex;
+    align-items: center;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+  }
+  button {
+    width: 100px;
+    height: 30px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: white;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    color: #333;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+@media (min-width: 600px) and (max-width: 1200px){
+  .boughtTrips{
+    font-size: 16px;
+    text-align: center;
+    margin:0px;
+    padding: 0px;
+  
+  }
+
+  .singleTrip{
+    flex-direction: column;
+    font-size: 16px;
+    min-height: 1000px;
+    margin-top: 30px;
+ 
+
+  }
+  .onExit{
+
+    justify-content: center;
+    align-items: center;
+    
+    height: 100%;
+}
+
+}
+@media (max-width:600px) {
+  .boughtTrips{
+    font-size: 12px;
+    text-align: center;
+    margin:0px;
+    padding: 0px;
+  
+  }
+
+  .singleTrip{
+    flex-direction: column;
+    font-size: 12px;
+    min-height: 500px;
+    margin-top: 30px;
+  }
+  .onExit{
+
+    justify-content: center;
+    align-items: center;
+
+    height: 100%;
+}
+
+}

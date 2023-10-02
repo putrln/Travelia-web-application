@@ -1,0 +1,195 @@
+
+.wrapper{
+
+   
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,350px);
+    grid-gap: 50px;
+    justify-content: center;
+    margin-top: 100px;
+  
+    font-family: 'Lato', sans-serif;
+
+}
+.summary-wrapper
+{
+
+    font-family: 'Lato', sans-serif;
+    height: 250px;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.summary{
+    
+  height: 70%;
+  width: 30%;
+  min-width: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #ccc;
+  border-radius: 12px;
+  box-shadow: 8px 4px 8px 0 rgba(128, 128, 128, 0.5);
+    
+}
+
+.summary > h1{
+
+
+}
+
+.singleTrip {
+    height: 650px;
+    background-color: #08AEEA;
+    --border: 2px black solid;
+
+
+
+    border-radius: 20px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+    position: relative;
+  }
+
+  .singleTrip:hover {
+    transform: scale(1.1);
+  }
+
+.singleTrip > img {
+    width: 100%;
+    max-height:200px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.information{
+    padding-left: 10px;
+    margin-top: 10px;
+}
+.information > h2{
+
+    margin-bottom: 10px;
+}
+.information > h1 {
+    padding: 0;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.description{
+
+    margin-top: 10px;
+    text-align: left;
+    height: 100px;
+    word-wrap: break-word;
+ 
+}
+
+.button {
+    display: inline-block;
+    border: none;
+    background-color: #006B8D;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+.btn-available
+{
+margin-top: 40px;
+display: flex;
+justify-content: space-around;
+align-items: center
+}
+
+/* .button.minus:hover { brak mozliwosci kupna 
+    background-color: #0080A5;
+  } */
+
+.button.plus {
+    margin-right: 10px;
+    
+}
+
+.button-unavailable{
+    background-color: grey;
+}
+
+.button.minus {
+    margin-left: 10px;
+}
+.addTrip{
+    height: 650px;
+    background-color: gray;
+    border: 2px black solid;
+
+
+
+    border-radius: 20px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    transition: background-color 0.3s ease-in-out;
+
+}
+.addTrip>img{
+    margin-top: 20px;
+}
+.addTrip:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+  }
+  .removeTrip:hover{
+    color: red;
+    
+    
+    
+
+}
+.editTrip:hover{
+    color: gray;
+}
+.textAndButton{
+
+    display: flex;
+    align-items: center;
+    
+    justify-content:space-between;
+    
+    width: 100%;
+
+
+}
+.imageOfTrip{
+    cursor: pointer;
+}
+.opinions{
+    margin: 0;
+    padding: 0;
+    width: 120px;
+}
+.tripOptions{
+ 
+    
+    height: 9%;
+    position: absolute;
+    margin-top: 10px;
+    bottom: 0px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    width: 100%;
+    justify-content: space-around;
+}

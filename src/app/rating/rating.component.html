@@ -1,0 +1,28 @@
+
+
+<div class="wrapper">
+
+    <div *ngIf="!onlyShow else show" class="rate"  (mouseenter)="isNotClicked = true;">
+        <div *ngFor="let val of starToVote;let i =index"  (mousedown)="changeRate(i)"  (mousedown)="AverageRate()"> 
+            <img class="stars"src="{{val}}" alt="">
+        
+    </div>
+    <!-- <p>{{rate}}/5</p> -->
+    </div>
+    
+    
+    <ng-template #show>
+  
+    
+    <div class="average">
+        <div *ngFor="let val of averageVote;let i =index"> 
+            <img class="stars"src="{{val}}" alt="">
+    </div> 
+    
+    
+    </div>
+    <p>{{onlyShow}}/5</p>
+    </ng-template>
+</div>
+    
+    
