@@ -1,31 +1,29 @@
-<<<<<<< HEAD
-# Wycieczki
+# Trips - Travel Service
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.1.1.
+Trips is a web application that allows users to browse, purchase, and review various tourist trips.
 
-## Development server
+## Technologies
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- **Angular**: 
+- **HTML**: 
+- **CSS**: 
+- **Firebase**: 
+- **TypeScript**: 
+- **JavaScript**: 
 
-## Code scaffolding
+## Features
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- **Registration and Login**: Ability to create an account and log in using an email address, password.
+- **Browsing Trips**: Sorting by category, date, price.
+- **Filtering**: Adjusting search results according to personal preferences.
+- **Reviews**: Leaving comments and ratings for purchased trips.
+- **User Profile**: Managing one's own profile and purchase history.
 
-## Build
+## User Roles
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+- **Regular User**: Browsing, purchasing, and reviewing trips.
+- **Trip Manager**: Managing available trips - adding, removing, editing.
+- **Administrator**: Ability to block users, change login persistence settings, and assign roles.
 
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
-=======
-# Travelia-web-application
->>>>>>> origin/main
+## Setup
+To run the code locally, you need to provide your Firebase API key. Insert your key in the `environments` file.
